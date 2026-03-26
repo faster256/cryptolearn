@@ -8,7 +8,7 @@
 ### Кроки розгортання
 1. Встановити Open Server.
 2. Клонувати репозиторій у папку domains:
-   git clone https://github.com/твій-логін/cryptolearn.git
+   git clone https://github.com/faster256/cryptolearn.git
 3. Створити базу даних `cryptolearn` у phpMyAdmin.
 4. Імпортувати db/schema.sql.
 5. Налаштувати php/config.php.
