@@ -1,0 +1,35 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+}
+
+main {
+  padding: 1em;
+}
+
+section {
+  margin-bottom: 2em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  header, footer {
+    padding: 0.5em;
+  }
+}
