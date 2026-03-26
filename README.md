@@ -36,7 +36,7 @@
 
 ### Кроки встановлення
 1. Клонувати репозиторій:
-   git clone https://github.com/твій-логін/cryptolearn.git
+   git clone https://github.com/faster256/cryptolearn.git
 2. Запустити Open Server (Apache + MySQL).
 3. Відкрити phpMyAdmin: http://localhost/phpmyadmin
 4. Створити базу даних `cryptolearn`.
