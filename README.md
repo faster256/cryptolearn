@@ -25,3 +25,25 @@
 
 ## 📜 Ліцензія
 Проєкт поширюється за умовами ліцензії MIT. Деталі див. у файлі `LICENSE`.
+
+## Getting Started (Open Server)
+
+### Необхідні залежності
+- Open Server
+- PHP >= 8.0
+- MySQL >= 5.7
+- phpMyAdmin
+
+### Кроки встановлення
+1. Клонувати репозиторій:
+   git clone https://github.com/твій-логін/cryptolearn.git
+2. Запустити Open Server (Apache + MySQL).
+3. Відкрити phpMyAdmin: http://localhost/phpmyadmin
+4. Створити базу даних `cryptolearn`.
+5. Імпортувати файл `db/schema.sql`.
+6. Налаштувати `php/config.php`:
+   ```php
+   $servername = "localhost";
+   $username = "root";
+   $password = "";
+   $dbname = "cryptolearn";
