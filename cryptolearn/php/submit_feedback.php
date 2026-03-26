@@ -1,12 +1,13 @@
 <?php
-require '../db/connection.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/db/connect.php';
 
+// решта коду для відправки відгуку
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-  $name = htmlspecialchars($_POST['name']);
-  $email = htmlspecialchars($_POST['email']);
-  $message = htmlspecialchars($_POST['message']);
-  $stmt = $pdo->prepare("INSERT INTO feedback (name, email, message) VALUES (?, ?, ?)");
-  $stmt->execute([$name, $email, $message]);
-  echo "Дякуємо за звернення!";
+    $feedback = $_POST['feedback'] ?? '';
+
+    $stmt = $pdo->prepare("INSERT INTO feedback (message) VALUES (:message)");
+    $stmt->execute(['message' => $feedback]);
+
+    echo "Дякуємо за ваш відгук!";
 }
 ?>
