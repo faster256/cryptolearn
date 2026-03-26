@@ -1,0 +1,23 @@
+<?php
+// admin_header.php — header for admin pages
+?>
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title data-i18n="admin_title">CryptoLearn — Адмінка</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="bg-white text-gray-900">
+  <header class="w-full border-b border-gray-200">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="/admin/index.php" class="text-lg font-semibold" data-i18n="admin_title">Адмін-панель</a>
+      <div class="flex items-center space-x-3">
+        <a href="/index.php" class="text-sm hover:underline" data-i18n="nav_home">Перейти на сайт</a>
+        <a href="/logout.php" class="text-sm hover:underline" data-i18n="nav_logout">Вийти</a>
+      </div>
+    </div>
+  </header>
+  <main class="max-w-6xl mx-auto px-4 py-8">
