@@ -1,0 +1,3 @@
+@echo off
+echo Starting Open Server...
+start "" "C:\OpenServer\OpenServer.exe"
